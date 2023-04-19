@@ -1,9 +1,9 @@
 // Mrm module to work with new line separated text files
-const { lines } = require("mrm-core");
-const { template } = require("mrm-core");
+const { lines, copyFiles } = require("mrm-core");
+
 const path = require("path");
 
-module.exports = function task() {
+function a() {
   // Read .gitignore if it exists
   lines(".gitignore")
     // Add lines that do not exist in a file yet,
@@ -13,9 +13,8 @@ module.exports = function task() {
     // Update or create a file
     .save();
 
-  template("eslint-config-js", path.join(__dirname, "eslint-config-js"))
-    .apply(config(), {
-      year: new Date().getFullYear(),
-    })
-    .save();
-};
+  copyFiles(__dirname, "eslint-config.js"); // Copy file
+}
+a();
+
+module.exports = a;

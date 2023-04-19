@@ -1,6 +1,6 @@
 {
   "name": "meniu-task",
-  "version": "0.1.2",
+  "version": "0.1.10",
   "description": "Unicorn task for meniu",
   "author": {
     "name": "Artem Sapegin",
@@ -23,5 +23,8 @@
   ],
   "dependencies": {
     "mrm-core": "^7.1.14"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0"
   }
 }
