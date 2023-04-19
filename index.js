@@ -1,6 +1,7 @@
 // Mrm module to work with new line separated text files
 const { lines } = require("mrm-core");
 const { template } = require("mrm-core");
+const path = require("path");
 
 module.exports = function task() {
   // Read .gitignore if it exists
