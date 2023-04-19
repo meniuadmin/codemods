@@ -1,0 +1,27 @@
+{
+  "name": "meniu-task",
+  "version": "0.1.0",
+  "description": "Unicorn task for meniu",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "https://meniuapp.com"
+  },
+  "homepage": "https://github.com/org/meniu",
+  "repository": "meniu/codemods",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "meniu",
+    "meniu-task",
+    "meniuapp"
+  ],
+  "dependencies": {
+    "mrm-core": "^7.1.14"
+  }
+}
