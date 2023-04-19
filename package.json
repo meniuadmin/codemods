@@ -1,6 +1,6 @@
 {
   "name": "meniu-task",
-  "version": "0.1.10",
+  "version": "0.1.12",
   "description": "Unicorn task for meniu",
   "author": {
     "name": "Artem Sapegin",
@@ -14,7 +14,8 @@
   },
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "files/*"
   ],
   "keywords": [
     "meniu",
