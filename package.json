@@ -7,7 +7,7 @@
     "url": "https://meniuapp.com"
   },
   "homepage": "https://github.com/org/meniu",
-  "repository": "meniu/codemods",
+  "repository": "meniuadmin/codemods",
   "license": "MIT",
   "engines": {
     "node": ">=18"
