@@ -13,9 +13,6 @@
     "node": ">=18"
   },
   "main": "config.json",
-  "scripts": {
-    "publish": "npm version patch -f"
-  },
   "files": [
     "config.json",
     "*/index.js",
