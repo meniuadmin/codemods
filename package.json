@@ -1,6 +1,6 @@
 {
   "name": "meniu-task",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Unicorn task for meniu",
   "author": {
     "name": "Artem Sapegin",
@@ -14,7 +14,7 @@
   },
   "main": "config.json",
   "scripts": {
-    "publish": "npm version patch -f && npm publish"
+    "publish": "npm version patch -f"
   },
   "files": [
     "config.json",
