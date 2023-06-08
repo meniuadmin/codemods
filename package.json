@@ -1,6 +1,6 @@
 {
   "name": "meniu-task",
-  "version": "0.1.100",
+  "version": "0.1.101",
   "description": "Unicorn task for meniu",
   "author": {
     "name": "Artem Sapegin",
@@ -17,6 +17,7 @@
     "config.json",
     "*/index.js",
     "*/*.config.ts",
+    "*/*.config.js",
     "*/files/**",
     "*/tsconfig.json"
   ],
