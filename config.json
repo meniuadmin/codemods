@@ -1,0 +1,22 @@
+{
+  "indent": "2",
+  "prettierPattern": " **/*.{ts,tsx,js,jsx}",
+  "lintStagedRules": {
+    "eslint": {
+      "extensions": ["js", "tsx", "ts", "jsx"]
+    },
+    "prettier": {
+      "extensions": ["css", "sass", "md", "js", "tsx", "ts", "jsx"]
+    }
+  },
+  "aliases": {
+    "format": [
+      "mrm-task-eslint",
+      "prettier",
+      "lint-staged",
+      "extensions-vscode"
+    ],
+    "format-cra": ["prettier", "lint-staged", "extensions-vscode", "ignores"],
+    "all": ["vitest"]
+  }
+}
