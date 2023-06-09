@@ -14,7 +14,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "habiCreditMicroDashboardMx",
+      name: "REPLACE_MICRO_NAME",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {

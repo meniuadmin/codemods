@@ -10,7 +10,7 @@ module.exports = merge(common, {
   devtool: false,
   plugins: [
     new ModuleFederationPlugin({
-      name: "[REPLACE_NAME]",
+      name: "REPLACE_MICRO_NAME",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
