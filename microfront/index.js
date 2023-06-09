@@ -1,12 +1,42 @@
 // Mrm module
-const { copyFiles, packageJson, install, lines } = require("mrm-core");
+const {
+  copyFiles,
+  packageJson,
+  install,
+
+  makeDirs,
+} = require("mrm-core");
 
 const path = require("path");
 
 function microfront({ microName }) {
   // Copy file
-  copyFiles(path.join(__dirname, "files"));
+  copyFiles(
+    path.join(__dirname, "files"),
+    [
+      "webpack/webpack.config.js",
+      "webpack/paths.js",
+      "webpack/webpack.common.js",
+      "webpack/webpack.config.dev.js",
+      "public/favicon.png",
+      "public/index.html",
+    ],
+    { overwrite: false }
+  );
 
+  copyFiles(path.join(__dirname), "babel.config.js", { overwrite: false });
+
+  makeDirs([
+    "src/assets",
+    "src/components",
+    "src/hooks",
+    "src/i18n",
+    "src/pages",
+    "src/redux",
+    "src/routes",
+    "src/utils",
+    "env/MX",
+  ]);
   const pkg = packageJson();
 
   pkg
@@ -30,13 +60,13 @@ function microfront({ microName }) {
 }
 
 microfront.description = "Create a new Microfront for Habi Projects";
-module.exports.parameters = {
-  microName: {
-    type: "input",
-    message: "New Microfrontend Name",
-    validate(value) {
-      return value ? true : "microName is required";
-    },
-  },
-};
+// microfront.parameters = {
+//   microName: {
+//     type: "input",
+//     message: "New Microfrontend Name",
+//     validate(value) {
+//       return value ? true : "microName is required";
+//     },
+//   },
+// };
 module.exports = microfront;
